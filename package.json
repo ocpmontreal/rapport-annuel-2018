@@ -11,8 +11,11 @@
   "license": "MIT",
   "dependencies": {
     "foundation-sites": "^6.5.1",
+    "imports-loader": "^0.8.0",
     "jquery": "^3.2.1",
+    "jquery-ui": "^1.12.1",
     "motion-ui": "^2.0.3",
+    "scrollmagic": "^2.0.6",
     "what-input": "^5.1.2"
   },
   "devDependencies": {

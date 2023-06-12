@@ -1,0 +1,75 @@
+header{
+    background-image: linear-gradient(white, $greenish);
+    min-height: 100vh;
+}
+
+#maintitle{
+    position: absolute;
+    opacity: 0;
+    top:50%;
+    right:3em;
+    transform:translateY(-50%);
+    width: 35%;
+    display: block;
+}
+
+#nav-buttons{
+    position: absolute;
+    top:3em;
+    right:3em;
+    //width:15%;
+}
+
+#logo_OCPM{
+    position:absolute;
+    top:3em;
+    left:3em;
+}
+
+#coverpicture{
+    height: 90%;
+    position:absolute;
+    bottom:0;
+    left:3em;
+}
+
+.button-lavender{
+    @include button(false, $lavendar, $lavendar, $lavendar, hollow);
+}
+
+@include breakpoint(medium down){
+    #nav-buttons{
+        position: relative;
+        top:initial;
+        right:initial;
+        text-align: center;
+        margin:2em 0;
+        width:100%;
+        padding:0 1em;
+    }
+
+    #logo_OCPM{
+        position:relative;
+        top:initial;
+        left:initial;
+        text-align: center;
+        margin:2em 0;
+    }
+    #maintitle{
+        position: initial;
+        opacity: 0;
+        top:initial;
+        left:initial;
+        transform:translateY(0);
+        margin:1em auto;
+        width: 90%
+    }
+
+    #coverpicture{
+        height: initial;
+        width: 100%;
+        position:absolute;
+        bottom:3em;
+        left:0;
+    }
+}

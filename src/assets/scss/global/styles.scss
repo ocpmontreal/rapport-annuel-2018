@@ -1,0 +1,207 @@
+.lettre{
+    background: white;
+    color: black;
+}
+
+.floated-left{
+    width:33%;
+    margin: 0 1.5rem 1.5rem 0;
+}
+
+
+.floated-right{
+    width:33%;
+    margin: 0 0 1rem 1rem;
+}
+
+.right80{
+    width: 80%;
+    //text-align: right;
+}
+
+.left80{
+    width: 80%;
+    //text-align: left;
+}
+
+#image-centered{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+
+.backgrounds-1{
+    background-image: url(/assets/img/elements_graphiques/bleu_croix.png),url(/assets/img/elements_graphiques/bleu_roulette.png);
+    background-position: 0% 97%, 100% 5%;
+    background-repeat: no-repeat, no-repeat;
+    background-size:13%,15%;
+
+}
+
+.backgrounds-1-full{
+    background-image: url(/assets/img/elements_graphiques/bleu_croix.png),url(/assets/img/elements_graphiques/bleu_roulette.png);
+    background-position: 0% 97%, 100% 5%;
+    background-repeat: no-repeat, no-repeat;
+    background-size:6%,5%;
+
+}
+
+.backgrounds-2{
+    background-image: url(/assets/img/elements_graphiques/bleu_engrenage.png),url(/assets/img/elements_graphiques/bleu_roulette.png);
+    background-position: 100% 5%,0% 97%;
+    background-repeat: no-repeat, no-repeat;
+    background-size:13%,15%;
+
+
+}
+
+.backgrounds-3{
+    background-image: url(/assets/img/elements_graphiques/bleu_engrenage.png),url(/assets/img/elements_graphiques/bleu_croix.png);
+    background-position: 100% 5%,0% 97%;
+    background-repeat: no-repeat, no-repeat;
+    background-size:13%,15%;
+
+}
+
+.backgrounds-3{
+    background-image: url(/assets/img/elements_graphiques/bleu_croix.png),url(/assets/img/elements_graphiques/bleu_engrenage.png);
+    background-position: 100% 5%,0% 97%;
+    background-repeat: no-repeat, no-repeat;
+    background-size:13%,15%;
+
+}
+
+#stat1{
+    position:absolute;
+    top: 42%;
+    left: 6%;
+}
+
+#stat2{
+    position:absolute;
+    top: 72%;
+    left: 15%;
+}
+
+#stat3{
+    position:absolute;
+    top: 10%;
+    right: 28%;
+}
+
+#stat4{
+    position:absolute;
+    top: 26%;
+    right: 5%;
+}
+
+#stat5{
+    position:absolute;
+    top: 62%;
+    right: 8%;
+}
+
+table.table-white{
+    font-weight: bold;
+    color:white;
+    background: none;
+    border:none;
+
+    thead{
+        background: none;
+        border:none;
+        color: white;
+    }
+
+    thead tr td{
+        padding: 0.5em 0;
+    }
+
+    tbody{
+        background:none;
+        border:none;
+    }
+
+    tbody tr{
+            background: transparent;
+            border-bottom:none;
+    }
+
+    tbody tr td{
+            background: transparent;
+            border-bottom:none;
+            padding:0.5em 0;
+    }
+
+    tbody tr:last-of-type td{
+        padding:1em 0;
+    }
+
+    tbody tr:last-of-type td:last-of-type{
+        border-top:3px solid white;
+    }
+}
+
+
+.table-blue{
+    color:$darkblue;
+}
+
+table.table-blue tbody{
+    border:none;
+}
+
+table.table-blue tbody tr{
+    border-bottom: 1px solid $darkblue;
+}
+
+table.table-blue tbody tr:last-of-type{
+    border-bottom: none;
+}
+
+table.table-blue thead{
+    border: none;
+}
+
+table.table-blue thead tr{
+    border-bottom: 1px solid $darkblue;
+}
+
+@include breakpoint(medium down) {
+    .floated-left{
+        width:100%;
+        margin: 2em 0;
+    }
+
+    .floated-right{
+        width:100%;
+        margin: 2em 0;
+    }
+    #stat1{
+        position:initial;
+    }
+    #stat2{
+        position:initial;
+    }
+    #stat3{
+        position:initial;
+    }
+    #stat4{
+        position:initial;
+    }
+    #stat5{
+        position:initial;
+    }
+    #image-centered{
+        position: initial;
+        transform: translate(0,0);
+    }
+    .stats{
+        margin-bottom:2em;
+    }
+
+    #titre-chiffres{
+        margin-bottom:3em;
+    }
+}

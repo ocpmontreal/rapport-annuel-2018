@@ -1,0 +1,55 @@
+.section-title{
+    min-height:40vh;
+    color:white;
+    @extend .padding-vertical-3;
+}
+
+#activites{
+    background: $lime;
+}
+
+#budget{
+    background: $cyan;
+}
+
+#communications{
+    background: $coral;
+
+}
+
+#credits{
+
+}
+
+#presidente{
+    background: $darkblue;
+}
+
+#remerciements{
+    background: $skyblue;
+}
+
+#rayonnement{
+    background: $lavendar;
+}
+
+#chiffres{
+    background: $greenish;
+    min-height:100vh;
+}
+
+#legal{
+    background: #333;
+    color: #fff;
+    padding: 3rem 0 3rem 0;
+}
+
+.stats{
+    width: 22%;
+}
+
+@include breakpoint(medium down) {
+    .stats{
+        width: 100%;
+    }
+}

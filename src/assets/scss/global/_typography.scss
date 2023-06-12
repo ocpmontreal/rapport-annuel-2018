@@ -1,0 +1,52 @@
+blockquote{
+color: $darkblue;
+font-weight: normal;
+border: none;
+padding: 1.2em;
+line-height: 1.25em;
+font-size: 1.45em;
+}
+
+.text-black{
+    font-weight: 900;
+}
+
+.text-bold{
+    font-weight: bold;
+}
+
+.section-header{
+    @extend .text-black;
+    @extend .text-center;
+    @extend .text-uppercase;
+}
+
+.section-sub-header{
+    @extend .text-black;
+    color:$darkblue;
+    @extend .h4;
+
+
+}
+
+.number{
+    font-weight: 900;
+    font-size: 5.6rem;
+    color:$darkblue;
+    line-height: 1em;
+}
+
+.small-number{
+    font-weight: 700;
+    font-size: 1.3em;
+    color:$darkblue;
+    line-height: 1em;
+}
+
+.number-text{
+    font-weight: 700;
+    font-size: 1.5rem;
+    color:$darkblue;
+    line-height: 1em;
+    text-transform: uppercase;
+}
